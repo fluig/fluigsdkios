@@ -1,0 +1,4 @@
+framework module fluigSDKCore {
+    header "fluigSDKCore-Swift.h"
+    requires objc
+}

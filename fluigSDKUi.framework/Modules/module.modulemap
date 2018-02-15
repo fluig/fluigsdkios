@@ -1,0 +1,11 @@
+framework module fluigSDKUi {
+  umbrella header "fluigSDKUi.h"
+
+  export *
+  module * { export * }
+}
+
+module fluigSDKUi.Swift {
+    header "fluigSDKUi-Swift.h"
+    requires objc
+}

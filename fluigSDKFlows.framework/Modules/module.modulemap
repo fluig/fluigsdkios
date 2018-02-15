@@ -1,0 +1,11 @@
+framework module fluigSDKFlows {
+  umbrella header "fluigSDKFlows.h"
+
+  export *
+  module * { export * }
+}
+
+module fluigSDKFlows.Swift {
+    header "fluigSDKFlows-Swift.h"
+    requires objc
+}
