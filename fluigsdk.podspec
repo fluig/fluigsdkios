@@ -22,8 +22,8 @@ Pod::Spec.new do |s|
 
   s.subspec 'flows' do |flows|
     flows.ios.vendored_frameworks = 'fluigSDKFlows.framework'
-    flows.dependency = 'fluigsdk/core'
-    flows.dependency = 'fluigsdk/ui'
+    flows.dependency 'fluigsdk/core'
+    flows.dependency 'fluigsdk/ui'
   end  
 
 end
