@@ -290,7 +290,13 @@ SWIFT_CLASS("_TtC10fluigSDKUi17FluigSDKMediaView")
 @property (nonatomic, strong) UIColor * _Nullable lastColor;
 - (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
 - (nonnull instancetype)initWithFrame:(CGRect)frame OBJC_DESIGNATED_INITIALIZER;
-- (nonnull instancetype)init SWIFT_UNAVAILABLE;
+- (nonnull instancetype)init;
+@end
+
+
+
+
+@interface FluigSDKMediaView (SWIFT_EXTENSION(fluigSDKUi))
 - (void)prepareForInterfaceBuilder;
 SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly) Class _Nonnull layerClass;)
 + (Class _Nonnull)layerClass SWIFT_WARN_UNUSED_RESULT;
