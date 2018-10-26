@@ -13,7 +13,7 @@ Pod::Spec.new do |s|
   s.default_subspecs = 'core', 'ui', 'flows'
 
   s.subspec 'core' do |core|
-    core.ios.vendored_frameworks = 'fluigSDKCore.framework', 'CommonCrypto.framework'
+    core.ios.vendored_frameworks = 'fluigSDKCore.framework'
   end  
 
   s.subspec 'ui' do |ui|
