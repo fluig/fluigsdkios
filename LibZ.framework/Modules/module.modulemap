@@ -1,0 +1,6 @@
+framework module LibZ {
+  umbrella header "LibZ.h"
+
+  export *
+  module * { export * }
+}
