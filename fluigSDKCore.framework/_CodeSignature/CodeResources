@@ -10,27 +10,27 @@
 		</data>
 		<key>Headers/fluigSDKCore-Swift.h</key>
 		<data>
-		M7tFFiVyg79F92hbHqD270RNL58=
+		ajjXdmVAdt+9CrVNnGVUL1s0QXU=
 		</data>
 		<key>Info.plist</key>
 		<data>
-		cMXV8qh4Q3Ta3iW6jXO1UhdFKiA=
+		eTjS7AE9mmZvU/l0YbzWZmjP7YM=
 		</data>
 		<key>Modules/fluigSDKCore.swiftmodule/i386.swiftdoc</key>
 		<data>
-		D2jJaAdOIrHqWEylH41a/z1NhKA=
+		EAac6pT8D5pdT9UItB/oI+U3/Fk=
 		</data>
 		<key>Modules/fluigSDKCore.swiftmodule/i386.swiftmodule</key>
 		<data>
-		/Pgz6RVvB6BC9/6wSrkvjaHrf0s=
+		cadE/zdHlnSRYYvDGNbMD9jI5LE=
 		</data>
 		<key>Modules/fluigSDKCore.swiftmodule/x86_64.swiftdoc</key>
 		<data>
-		Dbiv9Mfr3g2WBCTCyQmCsUP6jAw=
+		ytqLIhu5lg1sIHP+EaoT0KIKoGE=
 		</data>
 		<key>Modules/fluigSDKCore.swiftmodule/x86_64.swiftmodule</key>
 		<data>
-		Kse9urLhN3EAmrpyC/L85M6IGy8=
+		euxippt9lwZ91Qrsq2k0sVRp/W0=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -81,55 +81,55 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			M7tFFiVyg79F92hbHqD270RNL58=
+			ajjXdmVAdt+9CrVNnGVUL1s0QXU=
 			</data>
 			<key>hash2</key>
 			<data>
-			P7AkD4SUKlutiH9YcgTus2BM59eWQ+/yXqoFr2g406w=
+			xb6jmr8gfrX7Gq6lCvH98f5jSE/MObBMO1qTWvgjRTE=
 			</data>
 		</dict>
 		<key>Modules/fluigSDKCore.swiftmodule/i386.swiftdoc</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			D2jJaAdOIrHqWEylH41a/z1NhKA=
+			EAac6pT8D5pdT9UItB/oI+U3/Fk=
 			</data>
 			<key>hash2</key>
 			<data>
-			TWtjYoYkz9cs1jDQsoYx0//R3hlZJBaFB+YxANCLqds=
+			Z2Zjvhv3VMb8T53mQjQlh3IbKHB20vA/Qqesm+bRQIM=
 			</data>
 		</dict>
 		<key>Modules/fluigSDKCore.swiftmodule/i386.swiftmodule</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			/Pgz6RVvB6BC9/6wSrkvjaHrf0s=
+			cadE/zdHlnSRYYvDGNbMD9jI5LE=
 			</data>
 			<key>hash2</key>
 			<data>
-			cXicgrWFjcxvvyiYX0OipICeK2XzJ6mXI6xa2ofyYbQ=
+			zz4PzRNYbLXwBxmT6w7Z3UK/XRkuomxqjbXSnw2CF08=
 			</data>
 		</dict>
 		<key>Modules/fluigSDKCore.swiftmodule/x86_64.swiftdoc</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			Dbiv9Mfr3g2WBCTCyQmCsUP6jAw=
+			ytqLIhu5lg1sIHP+EaoT0KIKoGE=
 			</data>
 			<key>hash2</key>
 			<data>
-			bFRcyG7Ox8VTDyqQn5BMvZITCCEDx8WBxas36misg+k=
+			M0aOx300Qi37qY7PAoEZUNSKqGGOub/Mg5Qy+ul5apY=
 			</data>
 		</dict>
 		<key>Modules/fluigSDKCore.swiftmodule/x86_64.swiftmodule</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			Kse9urLhN3EAmrpyC/L85M6IGy8=
+			euxippt9lwZ91Qrsq2k0sVRp/W0=
 			</data>
 			<key>hash2</key>
 			<data>
-			C/1/rI0yH/Wu08If3WfDlhfEmEEd7c7Two+vuSfsjMc=
+			ymtZXu8g4Lrjhv7VEHNz4LrJwkGdEJ0mBrj6Mfq+aXg=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>
