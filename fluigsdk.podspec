@@ -9,7 +9,7 @@ Pod::Spec.new do |s|
   s.author                  = { "fluig" => "box@totvs.com.br" }
   s.source                  = { :http => "https://github.com/fluig/fluigsdkios.git" }
   s.requires_arc            = true
-
+  s.swift_version           = "4.2"
   s.default_subspecs = 'core', 'ui', 'flows'
 
   s.subspec 'core' do |core|
