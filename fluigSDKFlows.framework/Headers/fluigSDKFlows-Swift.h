@@ -199,6 +199,7 @@ SWIFT_CLASS("_TtC13fluigSDKFlows25DirectLoginViewController")
 @class UITextField;
 
 @interface DirectLoginViewController (SWIFT_EXTENSION(fluigSDKFlows)) <UITextFieldDelegate>
+- (void)textFieldDidEndEditing:(UITextField * _Nonnull)textField;
 - (BOOL)textFieldShouldReturn:(UITextField * _Nonnull)textField SWIFT_WARN_UNUSED_RESULT;
 @end
 
