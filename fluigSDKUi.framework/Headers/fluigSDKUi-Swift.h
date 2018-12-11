@@ -300,6 +300,7 @@ SWIFT_CLASS("_TtC10fluigSDKUi17FluigSDKMediaView")
 - (void)prepareForInterfaceBuilder;
 SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly) Class _Nonnull layerClass;)
 + (Class _Nonnull)layerClass SWIFT_WARN_UNUSED_RESULT;
+- (void)layoutSubviews;
 @end
 
 
