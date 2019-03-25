@@ -185,6 +185,13 @@ typedef unsigned int swift_uint4  __attribute__((__ext_vector_type__(4)));
 
 @class NSCoder;
 
+SWIFT_CLASS("_TtC10fluigSDKUi8CardView")
+@interface CardView : UIView
+- (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder SWIFT_UNAVAILABLE;
+- (nonnull instancetype)initWithFrame:(CGRect)frame SWIFT_UNAVAILABLE;
+@end
+
+
 SWIFT_CLASS("_TtC10fluigSDKUi15DirectLoginView")
 @interface DirectLoginView : UIView
 - (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
@@ -377,25 +384,6 @@ SWIFT_CLASS("_TtC10fluigSDKUi18ForgotPasswordView")
 @end
 
 
-
-
-@interface ForgotPasswordView (SWIFT_EXTENSION(fluigSDKUi)) <FluigSDKPageViewDataSource>
-- (NSArray<NSString *> * _Nonnull)getStrings SWIFT_WARN_UNUSED_RESULT;
-@end
-
-
-@interface ForgotPasswordView (SWIFT_EXTENSION(fluigSDKUi))
-@property (nonatomic, strong) UIImage * _Nullable backgroundImage;
-@property (nonatomic, strong) UIColor * _Nonnull backgroundFirstColor;
-@property (nonatomic, strong) UIColor * _Nonnull backgroundLastColor;
-@property (nonatomic, strong) UIImage * _Nullable logoImage;
-@property (nonatomic, copy) NSString * _Nullable pageControlTitle;
-@property (nonatomic, strong) UIImage * _Nullable textFieldIcon;
-@property (nonatomic, strong) UIColor * _Nullable buttonFirstColor;
-@property (nonatomic, strong) UIColor * _Nullable buttonLastColor;
-@end
-
-
 SWIFT_CLASS("_TtC10fluigSDKUi14MfaRequestView")
 @interface MfaRequestView : UIView
 - (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
@@ -488,6 +476,30 @@ SWIFT_CLASS("_TtC10fluigSDKUi19ServerSelectionView")
 
 
 
+
+
+
+
+
+
+
+
+SWIFT_CLASS("_TtC10fluigSDKUi17UserSelectionView")
+@interface UserSelectionView : UIView
+- (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
+- (nonnull instancetype)initWithFrame:(CGRect)frame OBJC_DESIGNATED_INITIALIZER;
+@end
+
+
+
+
+@interface UserSelectionView (SWIFT_EXTENSION(fluigSDKUi))
+@property (nonatomic, strong) UIImage * _Nullable backgroundImage;
+@property (nonatomic, strong) UIColor * _Nonnull backgroundFirstColor;
+@property (nonatomic, strong) UIColor * _Nonnull backgroundLastColor;
+@property (nonatomic, strong) UIImage * _Nullable logoImage;
+@property (nonatomic, copy) NSString * _Nullable pageControlTitle;
+@end
 
 #if __has_attribute(external_source_symbol)
 # pragma clang attribute pop
