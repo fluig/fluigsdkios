@@ -1,0 +1,10 @@
+xcassets:
+    inputs: Sources/Resources/Assets.xcassets
+    outputs:
+        templateName: swift4
+        output: Sources/Resources/Assets.swift
+strings:
+    inputs: Sources/Resources/en.lproj/Localizable.strings
+    outputs:
+        templateName: flat-swift4
+        output: Sources/Resources/L10n.swift

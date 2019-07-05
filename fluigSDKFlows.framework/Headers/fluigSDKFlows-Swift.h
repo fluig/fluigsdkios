@@ -163,8 +163,9 @@ typedef unsigned int swift_uint4  __attribute__((__ext_vector_type__(4)));
 # define SWIFT_DEPRECATED_OBJC(Msg) SWIFT_DEPRECATED_MSG(Msg)
 #endif
 #if __has_feature(modules)
+@import CoreGraphics;
+@import Foundation;
 @import UIKit;
-@import fluigSDKUi;
 #endif
 
 #pragma clang diagnostic ignored "-Wproperty-attribute-mismatch"
@@ -182,8 +183,24 @@ typedef unsigned int swift_uint4  __attribute__((__ext_vector_type__(4)));
 # pragma pop_macro("any")
 #endif
 
-@class NSBundle;
 @class NSCoder;
+
+SWIFT_CLASS("_TtC13fluigSDKFlows8CardView")
+@interface CardView : UIView
+- (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder SWIFT_UNAVAILABLE;
+- (nonnull instancetype)initWithFrame:(CGRect)frame SWIFT_UNAVAILABLE;
+@end
+
+
+SWIFT_CLASS("_TtC13fluigSDKFlows15DirectLoginView")
+@interface DirectLoginView : UIView
+- (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
+- (nonnull instancetype)initWithFrame:(CGRect)frame OBJC_DESIGNATED_INITIALIZER;
+@end
+
+
+
+@class NSBundle;
 
 SWIFT_CLASS("_TtC13fluigSDKFlows25DirectLoginViewController")
 @interface DirectLoginViewController : UIViewController
@@ -200,10 +217,20 @@ SWIFT_CLASS("_TtC13fluigSDKFlows25DirectLoginViewController")
 
 @interface DirectLoginViewController (SWIFT_EXTENSION(fluigSDKFlows)) <UITextFieldDelegate>
 - (void)textFieldDidEndEditing:(UITextField * _Nonnull)textField;
+- (BOOL)textField:(UITextField * _Nonnull)textField shouldChangeCharactersInRange:(NSRange)range replacementString:(NSString * _Nonnull)string SWIFT_WARN_UNUSED_RESULT;
 - (BOOL)textFieldShouldReturn:(UITextField * _Nonnull)textField SWIFT_WARN_UNUSED_RESULT;
 @end
 
 
+
+
+
+
+SWIFT_CLASS("_TtC13fluigSDKFlows16EmailRequestView")
+@interface EmailRequestView : UIView
+- (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
+- (nonnull instancetype)initWithFrame:(CGRect)frame OBJC_DESIGNATED_INITIALIZER;
+@end
 
 
 
@@ -220,16 +247,226 @@ SWIFT_CLASS("_TtC13fluigSDKFlows26EmailRequestViewController")
 @end
 
 
-@interface EmailRequestViewController (SWIFT_EXTENSION(fluigSDKFlows)) <FluigSDKPageViewDataSource>
-- (NSArray<NSString *> * _Nonnull)getStrings SWIFT_WARN_UNUSED_RESULT;
-@end
-
-
 @interface EmailRequestViewController (SWIFT_EXTENSION(fluigSDKFlows)) <UITextFieldDelegate>
 - (BOOL)textFieldShouldReturn:(UITextField * _Nonnull)textField SWIFT_WARN_UNUSED_RESULT;
 @end
 
 
+
+
+SWIFT_CLASS("_TtC13fluigSDKFlows13EulaTermsView")
+@interface EulaTermsView : UIView
+- (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
+- (nonnull instancetype)initWithFrame:(CGRect)frame OBJC_DESIGNATED_INITIALIZER;
+@end
+
+
+SWIFT_CLASS("_TtC13fluigSDKFlows8EulaView")
+@interface EulaView : UIView
+- (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
+- (nonnull instancetype)initWithFrame:(CGRect)frame OBJC_DESIGNATED_INITIALIZER;
+- (nonnull instancetype)init SWIFT_UNAVAILABLE;
++ (nonnull instancetype)new SWIFT_DEPRECATED_MSG("-init is unavailable");
+@end
+
+@class UIColor;
+
+SWIFT_CLASS("_TtC13fluigSDKFlows14FluigSDKButton")
+@interface FluigSDKButton : UIButton
+/// Sets the background color for the button
+@property (nonatomic, strong) UIColor * _Nullable backgroundColor;
+/// If informed composes with the backgroundColor to form a gradient.
+@property (nonatomic, strong) UIColor * _Nullable backgroundColorEnd;
+- (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
+- (nonnull instancetype)initWithFrame:(CGRect)frame OBJC_DESIGNATED_INITIALIZER;
+- (nonnull instancetype)init SWIFT_UNAVAILABLE;
++ (nonnull instancetype)new SWIFT_DEPRECATED_MSG("-init is unavailable");
+- (void)prepareForInterfaceBuilder;
+SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly) Class _Nonnull layerClass;)
++ (Class _Nonnull)layerClass SWIFT_WARN_UNUSED_RESULT;
+@end
+
+
+SWIFT_CLASS("_TtC13fluigSDKFlows19FluigSDKLoadingView")
+@interface FluigSDKLoadingView : UIView
+- (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
+- (nonnull instancetype)initWithFrame:(CGRect)frame OBJC_DESIGNATED_INITIALIZER;
+- (nonnull instancetype)init SWIFT_UNAVAILABLE;
++ (nonnull instancetype)new SWIFT_DEPRECATED_MSG("-init is unavailable");
+@end
+
+@class UIImage;
+
+SWIFT_CLASS("_TtC13fluigSDKFlows17FluigSDKMediaView")
+@interface FluigSDKMediaView : UIView
+@property (nonatomic, strong) UIImage * _Nullable image;
+/// Gradient background start color
+@property (nonatomic, strong) UIColor * _Nonnull firstColor;
+/// Gradient background finish color
+@property (nonatomic, strong) UIColor * _Nullable lastColor;
+- (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
+- (nonnull instancetype)initWithFrame:(CGRect)frame OBJC_DESIGNATED_INITIALIZER;
+- (nonnull instancetype)init;
+@end
+
+
+
+
+@interface FluigSDKMediaView (SWIFT_EXTENSION(fluigSDKFlows))
+- (void)prepareForInterfaceBuilder;
+SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly) Class _Nonnull layerClass;)
++ (Class _Nonnull)layerClass SWIFT_WARN_UNUSED_RESULT;
+- (void)layoutSubviews;
+@end
+
+
+SWIFT_CLASS("_TtC13fluigSDKFlows16FluigSDKPageView")
+@interface FluigSDKPageView : UIView
+@property (nonatomic, strong) UIColor * _Nullable tintColor;
+@property (nonatomic, copy) NSString * _Nullable title;
+- (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
+- (nonnull instancetype)initWithFrame:(CGRect)frame OBJC_DESIGNATED_INITIALIZER;
+@end
+
+@class UIPageViewController;
+
+@interface FluigSDKPageView (SWIFT_EXTENSION(fluigSDKFlows)) <UIPageViewControllerDelegate>
+- (void)pageViewController:(UIPageViewController * _Nonnull)pageViewController didFinishAnimating:(BOOL)finished previousViewControllers:(NSArray<UIViewController *> * _Nonnull)previousViewControllers transitionCompleted:(BOOL)completed;
+@end
+
+
+@interface FluigSDKPageView (SWIFT_EXTENSION(fluigSDKFlows)) <UIPageViewControllerDataSource>
+- (UIViewController * _Nullable)pageViewController:(UIPageViewController * _Nonnull)pageViewController viewControllerBeforeViewController:(UIViewController * _Nonnull)viewController SWIFT_WARN_UNUSED_RESULT;
+- (UIViewController * _Nullable)pageViewController:(UIPageViewController * _Nonnull)pageViewController viewControllerAfterViewController:(UIViewController * _Nonnull)viewController SWIFT_WARN_UNUSED_RESULT;
+@end
+
+
+SWIFT_PROTOCOL("_TtP13fluigSDKFlows26FluigSDKPageViewDataSource_")
+@protocol FluigSDKPageViewDataSource
+@optional
+- (NSArray<NSString *> * _Nonnull)getStrings SWIFT_WARN_UNUSED_RESULT;
+- (NSArray<UIViewController *> * _Nonnull)getViewControllers SWIFT_WARN_UNUSED_RESULT;
+@end
+
+
+SWIFT_CLASS("_TtC13fluigSDKFlows17FluigSDKPopUpView")
+@interface FluigSDKPopUpView : UIView
+@property (nonatomic, copy) NSString * _Nonnull buttonText;
+@property (nonatomic, weak) UIImage * _Nullable image;
+@property (nonatomic, copy) NSString * _Nonnull message;
+@property (nonatomic, strong) UIColor * _Nonnull accentColor;
+@property (nonatomic, copy) NSString * _Nonnull title;
+- (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
+- (nonnull instancetype)initWithFrame:(CGRect)frame OBJC_DESIGNATED_INITIALIZER;
+@end
+
+
+SWIFT_CLASS("_TtC13fluigSDKFlows18FluigSDKProfilePic")
+@interface FluigSDKProfilePic : UIView
+@property (nonatomic, strong) UIImage * _Nullable image;
+- (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
+- (nonnull instancetype)initWithFrame:(CGRect)frame OBJC_DESIGNATED_INITIALIZER;
+- (nonnull instancetype)init SWIFT_UNAVAILABLE;
++ (nonnull instancetype)new SWIFT_DEPRECATED_MSG("-init is unavailable");
+- (void)layoutSubviews;
+@end
+
+
+SWIFT_CLASS("_TtC13fluigSDKFlows17FluigSDKTextField")
+@interface FluigSDKTextField : UITextField
+@property (nonatomic, weak) UIImage * _Nullable icon;
+@property (nonatomic, copy) NSString * _Nullable placeholder;
+- (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
+- (nonnull instancetype)initWithFrame:(CGRect)frame OBJC_DESIGNATED_INITIALIZER;
+- (void)prepareForInterfaceBuilder;
+- (CGRect)editingRectForBounds:(CGRect)bounds SWIFT_WARN_UNUSED_RESULT;
+- (CGRect)textRectForBounds:(CGRect)bounds SWIFT_WARN_UNUSED_RESULT;
+- (CGRect)leftViewRectForBounds:(CGRect)bounds SWIFT_WARN_UNUSED_RESULT;
+@end
+
+
+SWIFT_CLASS("_TtC13fluigSDKFlows22FluigSDKTextFieldGroup")
+@interface FluigSDKTextFieldGroup : UIView
+- (nonnull instancetype)initWithFrame:(CGRect)frame SWIFT_UNAVAILABLE;
+- (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)coder OBJC_DESIGNATED_INITIALIZER;
+- (nonnull instancetype)init;
+@end
+
+
+SWIFT_CLASS("_TtC13fluigSDKFlows18ForgotPasswordView")
+@interface ForgotPasswordView : UIView
+- (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
+- (nonnull instancetype)initWithFrame:(CGRect)frame OBJC_DESIGNATED_INITIALIZER;
+@end
+
+
+SWIFT_CLASS("_TtC13fluigSDKFlows14MfaRequestView")
+@interface MfaRequestView : UIView
+- (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
+- (nonnull instancetype)initWithFrame:(CGRect)frame OBJC_DESIGNATED_INITIALIZER;
+@end
+
+
+
+
+
+
+SWIFT_CLASS("_TtC13fluigSDKFlows19PasswordRequestView")
+@interface PasswordRequestView : UIView
+- (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
+- (nonnull instancetype)initWithFrame:(CGRect)frame OBJC_DESIGNATED_INITIALIZER;
+@end
+
+
+
+
+SWIFT_CLASS("_TtC13fluigSDKFlows19ServerSelectionView")
+@interface ServerSelectionView : UIView
+- (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
+- (nonnull instancetype)initWithFrame:(CGRect)frame OBJC_DESIGNATED_INITIALIZER;
+@end
+
+@class UITableView;
+@class UITableViewCell;
+
+@interface ServerSelectionView (SWIFT_EXTENSION(fluigSDKFlows)) <UITableViewDataSource, UITableViewDelegate>
+- (UITableViewCell * _Nonnull)tableView:(UITableView * _Nonnull)tableView cellForRowAtIndexPath:(NSIndexPath * _Nonnull)path SWIFT_WARN_UNUSED_RESULT;
+- (NSInteger)tableView:(UITableView * _Nonnull)tableView numberOfRowsInSection:(NSInteger)section SWIFT_WARN_UNUSED_RESULT;
+- (void)tableView:(UITableView * _Nonnull)tableView didSelectRowAtIndexPath:(NSIndexPath * _Nonnull)indexPath;
+@end
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+SWIFT_CLASS("_TtC13fluigSDKFlows17UserSelectionView")
+@interface UserSelectionView : UIView
+- (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
+- (nonnull instancetype)initWithFrame:(CGRect)frame OBJC_DESIGNATED_INITIALIZER;
+@end
 
 
 
