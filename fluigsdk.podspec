@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name                    = "fluigsdk"
-  s.version                 = "0.2.22"
+  s.version                 = "0.2.23"
   s.summary                 = "fluig SDK"
 
   s.ios.deployment_target = '11.0'
