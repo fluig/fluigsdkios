@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name                    = "fluigsdk"
-  s.version                 = "0.2.29"
+  s.version                 = "0.2.30"
   s.summary                 = "fluig SDK"
 
   s.ios.deployment_target = '11.0'
@@ -9,7 +9,7 @@ Pod::Spec.new do |s|
   s.author                  = { "fluig" => "box@totvs.com.br" }
   s.source                  = { :http => "https://github.com/fluig/fluigsdkios.git" }
   s.requires_arc            = true
-  s.swift_version           = "4.2"
+  s.swift_version           = "5.0"
   s.default_subspecs = 'core', 'flows'
 
   s.subspec 'core' do |core|
